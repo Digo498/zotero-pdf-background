@@ -2,7 +2,7 @@
 
 This fork is intended to simply translate the original project texts into english.
 
-Install by downloading the [latest version](https://github.com/Digo498/zotero-pdf-background/releases/tag/Latest)
+Install by downloading the [latest version](https://github.com/Digo498/zotero-pdf-background/releases/tag/latest)
 
 ## Feature
 
