@@ -22,8 +22,8 @@
 
   var pdf_background = class {
     constructor() {
-      this.background_list=["default","daytime","nighttime","careeye","parchment"];//背景颜色列表
-      this.setPref("defaultBackground",this.background_list[3]);//预先写入配置
+      this.background_list=["default","daytime","nighttime","careeye","parchment"];
+      this.setPref("defaultBackground",this.background_list[3]);
     }
     getPref(pref) {
       return Zotero.Prefs.get(`extensions.pdf-bakcground.${pref}`, true);
@@ -43,7 +43,7 @@
       const defaultBackground = this.getPref("defaultBackground");//获得设置中背景颜色
       const toggle = readerWindow.document.createElement("button");
       toggle.setAttribute("id", "switch-toggle");
-      toggle.setAttribute("title", "选择背景颜色");
+      toggle.setAttribute("title", "Choose a background color");
       toggle.setAttribute("class","toolbarButton background-color");
       toggle.innerHTML=`<span class="button-background"></span><span class="dropmarker"></span>`;
       toggle.onclick = () => {
@@ -60,11 +60,11 @@
       selector.setAttribute("id", "background-selector");
       selector.setAttribute("class", "hidden");
       selector.innerHTML=`
-        <li value="default">默认</li>
-        <li value="daytime">日间</li>
-        <li value="nighttime">夜间</li>
-        <li value="careeye">护眼</li>
-        <li value="parchment">羊皮纸</li>
+        <li value="default">Default</li>
+        <li value="daytime">Daytime</li>
+        <li value="nighttime">Nighttime</li>
+        <li value="careeye">Green</li>
+        <li value="parchment">Yellow</li>
       `;
       selector.onclick = (e) => {
         this.backgroundSelectorOnClick(e,readerWindow);
