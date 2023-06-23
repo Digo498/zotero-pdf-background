@@ -2,9 +2,7 @@
 
 This fork is intended to simply translate the original project texts into english.
 
-![](example1.png)![](example2.png)![](example3.png)
-
-Install by downloading the [latest version](https://github.com/q77190858/zotero-pdf-background/releases/latest)
+Install by downloading the [latest version](https://github.com/Digo498/zotero-pdf-background/releases/tag/Latest)
 
 ## Feature
 
