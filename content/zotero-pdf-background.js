@@ -23,7 +23,7 @@
   var pdf_background = class {
     constructor() {
       this.background_list=["default","daytime","nighttime","careeye","parchment"];
-      this.setPref("defaultBackground",this.background_list[3]);
+      this.setPref("defaultBackground",this.background_list[4]);
     }
     getPref(pref) {
       return Zotero.Prefs.get(`extensions.pdf-bakcground.${pref}`, true);
